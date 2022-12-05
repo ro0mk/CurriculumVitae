@@ -1,6 +1,6 @@
 $(document).ready(function () {
   // array with texts to type in typewriter
-  let dataText = ["I'm a Web Developer.", "I'm a Web Designer.", "I'm a Freelancer."];
+  let dataText = ["I'm a Web Developer.", "I'm a Web Designer.", "I'm a Freelancer.", "nigger"];
 
   // type one text in the typwriter
   // keeps calling itself until the text is finished

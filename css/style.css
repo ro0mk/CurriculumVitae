@@ -477,6 +477,11 @@ span#job {
 }
 
 /*PARA MONITORES*/
+@media (min-width:894px) {
+    .sidebar {
+        display: block !important;
+    }
+}
 
 @media (min-height:941px) {
     .background .hero_img {
@@ -638,7 +643,7 @@ span#job {
 
     .menu-hamburguer {
         display: block;
-        position: absolute;
+        position: fixed;
         cursor: pointer;
         margin-top: 20px;
         z-index: 999;
