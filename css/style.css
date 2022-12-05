@@ -26,7 +26,8 @@
     position: relative;
 }
 
-.sidebar .detalhes-logo .logo_name, .sidebar .detalhes-logo .logo_name a {
+.sidebar .detalhes-logo .logo_name,
+.sidebar .detalhes-logo .logo_name a {
     margin: auto;
     color: #fff;
     text-decoration: none;
@@ -80,7 +81,8 @@
     pointer-events: auto;
 }
 
-.sidebar li a:hover .links_name, .sidebar li a:hover i {
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i {
     transition: all 0.5s ease;
     color: #11101D;
 }
@@ -146,16 +148,17 @@
 .type {
     border-right: 0.05em solid #fff;
     animation: caret 1s steps(1) infinite;
-  }
-  
-  span#job {
+}
+
+span#job {
     color: #ffffff;
-  }
-  @keyframes caret {
+}
+
+@keyframes caret {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
-  }
+}
 
 /*SSSSSSSSSSSSSSSSSSSSSOOOOOOOOOOOOOOOOBBBBBBBBBBRRRRRRRRRRREEEEEEEEEEE*/
 
@@ -203,7 +206,7 @@
 /*PROGRESSBARS*/
 
 .skills {
-    margin-right: 10%;
+    margin-right: auto;
     height: 151px !important;
     text-align: left;
 }
@@ -402,12 +405,12 @@
 .portitens {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
 }
 
 .portitens img {
     width: 400px;
     transition: 1s;
-    margin: 60px;
 }
 
 .portitens img:hover {
@@ -575,7 +578,7 @@
     }
 
     .portitens img {
-        width: 300px;
+        width: 100%;
     }
 }
 
@@ -596,6 +599,7 @@
 
     /* MENU HAMBURGUER*/
     .sidebar {
+        display: none;
         width: 100%;
     }
 
@@ -620,7 +624,8 @@
         font-size: 25px;
     }
 
-    .sidebar .detalhes-logo .logo_name, .sidebar .detalhes-logo .logo_name a {
+    .sidebar .detalhes-logo .logo_name,
+    .sidebar .detalhes-logo .logo_name a {
         margin-top: 20px;
         font-size: 34px;
     }
@@ -632,12 +637,17 @@
     /*MENU HAMBURGUER*/
 
     .menu-hamburguer {
-        display: inline-block;
+        display: block;
+        position: absolute;
         cursor: pointer;
         margin-top: 20px;
+        z-index: 999;
+        right: 20px;
     }
 
-    .bar1, .bar2, .bar3 {
+    .bar1,
+    .bar2,
+    .bar3 {
         width: 35px;
         height: 5px;
         background-color: white;
@@ -676,6 +686,10 @@
 
     .formacao h2 {
         margin: 10% 0 10% 10%;
+    }
+
+    .content {
+        margin-left: 0;
     }
 
     .contentsobre {

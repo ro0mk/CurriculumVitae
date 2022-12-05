@@ -1,7 +1,3 @@
-function myFunction(x) {
-  x.classList.toggle("change");
-}
-
 $(document).ready(function () {
   // array with texts to type in typewriter
   let dataText = ["I'm a Web Developer.", "I'm a Web Designer.", "I'm a Freelancer."];
@@ -45,4 +41,18 @@ $(document).ready(function () {
   }
   // start the text animation
   StartTextAnimation(0);
+});
+
+$(document).ready(function () {
+  $(".menu-hamburguer").click(function () {
+    var display;
+    $('.menu-hamburguer').toggleClass("change");
+    display = $(".sidebar").css("display");
+
+    if (display === "block") {
+      $(".sidebar").css("display", "none");
+    } else {
+      $(".sidebar").css("display", "block");
+    }
+  })
 });
